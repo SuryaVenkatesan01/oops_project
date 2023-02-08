@@ -29,11 +29,13 @@ class ShopByCategoryPage(KohlsLoginPage):
     def exception1(self):
         try:
             self.driver.find_element(By.XPATH, "//span[text()='Shop by Categor']").click()
-        except:
+        except():
             print("Invalid Xpath")
 
-#Menu
+
+# Menu
 obj = ShopByCategoryPage()
+
 while True:
     print("Enter 1 login")
     print("Enter 2 for select items only after logging in")
@@ -48,16 +50,3 @@ while True:
         obj.exception1()
     elif userchoice == 4:
         quit()
-
-
-
-
-
-
-
-
-
-
-
-
-
