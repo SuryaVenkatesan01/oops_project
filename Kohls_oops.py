@@ -29,7 +29,7 @@ class ShopByCategoryPage(KohlsLoginPage):
     def exception1(self):
         try:
             self.driver.find_element(By.XPATH, "//span[text()='Shop by Categor']").click()
-        except():
+        except:
             print("Invalid Xpath")
 
 
