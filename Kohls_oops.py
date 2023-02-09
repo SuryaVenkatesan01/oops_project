@@ -18,6 +18,9 @@ class KohlsLoginPage:
         self.driver.find_element(By.XPATH, "//input[@name='loginPassword']").send_keys('Surya2001')
         self.driver.find_element(By.XPATH, "//input[@name='loginEmail']").click()
 
+    def select_boots_category(self):
+        return 0
+
 
 class ShopByCategoryPage(KohlsLoginPage):
 
